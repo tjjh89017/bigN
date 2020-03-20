@@ -39,7 +39,7 @@ struct bigN* bigN_sub(struct bigN *a, struct bigN *b);
 
 struct bigN* bigN_init(struct bigN *a)
 {
-	a->len = 1ULL;
+	a->len = 2ULL;
 	a->num = malloc(2 * sizeof(unsigned long long));
 	a->num[0] = 0ULL;
 	a->num[1] = 0ULL;
