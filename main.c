@@ -91,6 +91,7 @@ struct bigN* bigN_parse_hex(struct bigN *a, const char *buf_arg)
 		char *endptr;
 		unsigned long long val = strtoull(buf + start, &endptr, 16);
 		a->num[i] = val;
+		buf[buf_len] = '\0';
 	}
 
 	if(neg_flag){
